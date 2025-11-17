@@ -1,0 +1,157 @@
+{
+  "screen": {
+    "width": 1920,
+    "height": 1000,
+    "bg_color": [0, 0, 0],
+    "title": "Hostage Situation"
+  },
+  "elements": {
+    "TITLE": {
+      "type": "text",
+      "font_size": 48,
+      "font_color": [50, 200, 50],
+      "msg": "Hostage Situation",
+      "align": "top_left",
+      "offset": [30, 30]
+    },
+    "SUBTITLE": {
+      "type": "text",
+      "font_size": 24,
+      "font_color": [50, 200, 50],
+      "msg": "Don't let the hostages escape!",
+      "align_to": {"name": "TITLE", "position": "bottom"},
+      "offset": [0, 5],
+      "max_width": 800
+    },
+    "AUTHOR": {
+      "type": "text",
+      "font_size": 15,
+      "font_color": [200, 50, 50],
+      "msg": "@djiinjure",
+      "align": "top_right",
+      "offset": [5, 0],
+      "max_width": 300
+    },
+    "PLAY": {
+      "type": "button",
+      "msg": "Play",
+      "size": [200, 50],
+      "font_size": 40,
+      "bg_color": [0, 0, 0],
+      "text_color": [50, 200, 50],
+      "outline": true,
+      "align": "bottom_left",
+      "offset": [5, 0]
+    },
+    "OPTIONS": {
+      "type": "button",
+      "msg": "Options",
+      "size": [200, 50],
+      "font_size": 40,
+      "bg_color": [0, 0, 0],
+      "text_color": [50, 200, 50],
+      "outline": true,
+      "align_to": {"name": "PLAY", "position": "right"},
+      "offset": [5, 0]
+    },
+    "QUIT": {
+      "type": "button",
+      "msg": "Quit",
+      "size": [200, 50],
+      "font_size": 40,
+      "bg_color": [0, 0, 0],
+      "text_color": [50, 200, 50],
+      "outline": true,
+      "align_to": {"name": "OPTIONS", "position": "right"},
+      "offset": [5, 0]
+    },
+    "UPGRADES": {
+      "type": "button",
+      "msg": "Upgrade",
+      "size": [200, 50],
+      "font_size": 40,
+      "bg_color": [0, 0, 0],
+      "text_color": [50, 200, 50],
+      "outline": true,
+      "align_to": {"name": "QUIT", "position": "right"},
+      "offset": [5, 0]
+    },
+    "INTRO_HEADER": {
+      "type": "text",
+      "msg": "Introduction:",
+      "font_size": 32,
+      "font_color": [50, 200, 50],
+      "align": "left",
+      "offset": [30, 30],
+      "max_width": 820
+    },
+    "INTRO_BODY": {
+      "type": "text",
+      "msg": "You were the victim of a government plot to test a new compound. They have removed all safe medication from stores and have pushed this new, addictive drug called 'J'. You are fed up with it and have decided to kidnap all people involved. The issue at hand is that they want to escape. Don't let them.",
+      "font_size": 24,
+      "font_color": [200, 50, 50],
+      "align": "left",
+      "offset": [30, 30],
+      "max_width": 820
+    },
+    "CONTROLS_HEADER": {
+      "type": "text",
+      "msg": "How to play:",
+      "font_size": 32,
+      "font_color": [50, 200, 50],
+      "align": "left",
+      "offset": [30, 30],
+      "max_width": 820
+    },
+    "CONTROLS_BODY": {
+      "type": "text",
+      "msg": "Use the standard WASD keys or ARROW keys to move the player (green) and attempt to catch all escaping hostages. Hostages will immediately be extorted for $1. As you capture more hostages, you will be allowed to purchase upgrades to get better at capture and extortion.",
+      "font_size": 24,
+      "font_color": [200, 50, 50],
+      "align": "left",
+      "offset": [30, 30],
+      "max_width": 820
+    }
+  },
+  "containers": {
+    "INTROBOX": {
+      "type": "container",
+      "align": "top_right",
+      "size": [880, 460],
+      "children": ["INTRO_HEADER", "INTRO_BODY"],
+      "layout": {
+        "type": "vertical",
+        "spacing": 20,
+        "align_children": "left",
+        "vertical_align": "top"
+      },
+      "offset": [30, 30]
+    },
+    "CONTROLSBOX": {
+      "type" : "container",
+      "align": "bottom_right",
+      "size" : [880, 460],
+      "children": ["CONTROLS_HEADER", "CONTROLS_BODY"],
+      "layout": {
+        "type": "vertical",
+        "spacing": 20,
+        "align_children": "left",
+        "vertical_align": "top"
+      },
+      "offset": [30, 30]
+    },
+    "BUTTONBOX": {
+      "type": "container",
+      "align": "bottom_left",
+      "size": [880, 60],
+      "children": ["PLAY", "OPTIONS", "QUIT", "UPGRADES"],
+      "layout": {
+        "type": "horizontal",
+        "spacing": 20,
+        "align_children": "center",
+        "horizontal_align": "left"
+      },
+      "offset": [30, 30]
+    }
+  }
+}
