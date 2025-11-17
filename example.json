@@ -34,7 +34,7 @@
     },
     "BUTTON": {
         "type": "button",
-        "msg": "Play",
+        "msg": "Button",
         "size": [200, 50],
         "font_size": 40,
         "bg_color": [0, 0, 0],
