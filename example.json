@@ -1,0 +1,94 @@
+{
+"screen": {
+    "width": 1920,
+    "height": 1000,
+    "bg_color": [0, 0, 0],
+    "title": "Hostage Situation"
+},
+"elements": {
+    "TITLE": {
+        "type": "text",
+        "font_size": 48,
+        "font_color": [50, 200, 50],
+        "msg": "your title here",
+        "align": "top_left",
+        "offset": [30, 30]
+    },
+    "SUBTITLE": {
+        "type": "text",
+        "font_size": 24,
+        "font_color": [50, 200, 50],
+        "msg": "your subtitle here",
+        "align_to": {"name": "TITLE", "position": "bottom"},
+        "offset": [0, 5],
+        "max_width": 800
+    },
+    "AUTHOR": {
+        "type": "text",
+        "font_size": 15,
+        "font_color": [200, 50, 50],
+        "msg": "author ship of the app here",
+        "align": "top_right",
+        "offset": [5, 0],
+        "max_width": 300
+    },
+    "BUTTON": {
+        "type": "button",
+        "msg": "Play",
+        "size": [200, 50],
+        "font_size": 40,
+        "bg_color": [0, 0, 0],
+        "text_color": [50, 200, 50],
+        "outline": true,
+        "align": "bottom_left",
+        "offset": [5, 0]
+    },
+    "INTRO_HEADER": {
+        "type": "text",
+        "msg": "Introduction:",
+        "font_size": 32,
+        "font_color": [50, 200, 50],
+        "align": "left",
+        "offset": [30, 30],
+        "max_width": 820
+    },
+    "INTRO_BODY": {
+        "type": "text",
+        "msg": "This is an intoduction to the application. This text will wrap if the width of the text exceeds 820 pixels. I will continue writing here to make the text wrap.",
+        "font_size": 24,
+        "font_color": [200, 50, 50],
+        "align": "left",
+        "offset": [30, 30],
+        "max_width": 820
+    }
+  },
+"containers": {
+    "INTROBOX": {
+        "type": "container",
+        "align": "top_right",
+        "size": [880, 460],
+        "children": ["INTRO_HEADER", "INTRO_BODY"],
+        "layout": {
+            "type": "vertical",
+            "spacing": 20,
+            "align_children": "left",
+            "vertical_align": "top"
+        },
+        "offset": [30, 30]
+    },
+    "BUTTONBOX": {
+        "type": "container",
+        "align": "bottom_left",
+        "size": [880, 60],
+        "children": ["BUTTON"],
+        "layout": {
+            "type": "horizontal",
+            "spacing": 20,
+            "align_children": "center",
+            "horizontal_align": "left"
+        },
+        "offset": [30, 30]
+    }
+}
+}
+
