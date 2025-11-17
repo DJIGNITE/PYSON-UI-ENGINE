@@ -1,5 +1,5 @@
 # PYSON-UI-ENGINE  
-<p align="center">JSON-driven UI Engine for Pygame</p>
+JSON-driven UI Engine for Pygame
 
 
 # Description
